@@ -1,0 +1,12 @@
+version: "1.0"
+services:
+  apache:
+    build: './httpd/'
+    ports:
+      - "80:80"
+    volumes:
+      - ./prestashop/:/var/www/html/
+  mysql:
+    build: './mysql'
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
