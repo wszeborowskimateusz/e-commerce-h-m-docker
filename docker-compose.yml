@@ -1,12 +1,30 @@
-version: "1.0"
+version: "2.0"
 services:
+  db:
+    build: './mysql'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306:3306"
+    networks:
+      - default
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
   apache:
-    build: './httpd/'
+    build: './httpd'
     ports:
       - "80:80"
     volumes:
-      - ./prestashop/:/var/www/html/
-  mysql:
-    build: './mysql'
-    environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - ./httpd/prestashop/:/var/www/html/
+    links:
+      - db
+    networks:
+      - default
+   
+
+
+
