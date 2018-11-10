@@ -4,6 +4,7 @@ services:
     build: './mysql'
     environment:
       - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=prestashop_hm
     ports:
       - "3306:3306"
     networks:

@@ -2,7 +2,7 @@
   'parameters' => 
   array (
     'database_host' => 'db',
-    'database_port' => '3306',
+    'database_port' => '',
     'database_name' => 'prestashop_hm',
     'database_user' => 'root',
     'database_password' => 'root',
