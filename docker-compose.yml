@@ -17,6 +17,8 @@ services:
       - "8080:80"
   apache:
     build: './httpd'
+    depends_on:
+      - db
     ports:
       - "80:80"
     volumes:
