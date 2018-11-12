@@ -21,8 +21,6 @@ services:
       - db
     ports:
       - "80:80"
-    volumes:
-      - ./httpd/prestashop/:/var/www/html/
     links:
       - db
     networks:
