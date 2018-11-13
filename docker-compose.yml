@@ -9,6 +9,8 @@ services:
       - "3306:3306"
     networks:
       - default
+    volumes:
+      - ./mysql/data:/var/lib/mysql
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     depends_on:
@@ -17,6 +19,8 @@ services:
       - "8080:80"
   apache:
     build: './httpd'
+    volumes:
+      - ./httpd/prestashop/:/var/www/html/
     depends_on:
       - db
     ports:

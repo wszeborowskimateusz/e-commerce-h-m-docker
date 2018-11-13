@@ -1,9 +1,11 @@
 FROM php:5.6-apache
 
 RUN docker-php-ext-install pdo pdo_mysql
+
+RUN apt-get update && apt-get install -y zlib1g-dev libicu-dev g++
+RUN docker-php-ext-configure intl
+RUN docker-php-ext-install intl
 RUN a2enmod rewrite
 
-USER root
-COPY ./prestashop /src
-RUN rm -rf /var/www/html && mv /src /var/www/html &&\
-    chmod -R 777 /var/www
+RUN usermod -u 1000 www-data
+RUN usermod -G staff www-data
