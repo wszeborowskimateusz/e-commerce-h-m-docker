@@ -1,8 +1,27 @@
-/* Automatically generated file - DO NOT EDIT, YOUR CHANGES WOULD BE LOST */
+<?php
+/* Smarty version 3.1.32, created on 2018-11-13 16:21:13
+  from '/var/www/html/modules/revws/views/templates/front/css.tpl' */
 
-
-/* begin modules/revws/views/templates/front/css.tpl */
-.revws-hidden {
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32',
+  'unifunc' => 'content_5beaebe9725b69_74911225',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '884538e3b1657c67bcd1d2156b99c9639e077ba0' => 
+    array (
+      0 => '/var/www/html/modules/revws/views/templates/front/css.tpl',
+      1 => 1542119307,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5beaebe9725b69_74911225 (Smarty_Internal_Template $_smarty_tpl) {
+?>.revws-hidden {
   display: none;
 }
 
@@ -22,48 +41,65 @@ a .revws-grading {
 }
 
 .revws-grading-product .revws-grade-wrap {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product']/8, ENT_QUOTES, 'UTF-8');?>
+px;
+  padding-right: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product']/8, ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-criterion .revws-grade-wrap {
-  padding-left: 1.75px;
-  padding-right: 1.75px;
+  padding-left: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product']*0.875/8, ENT_QUOTES, 'UTF-8');?>
+px;
+  padding-right: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product']*0.875/8, ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-list .revws-grade-wrap {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['list']/8, ENT_QUOTES, 'UTF-8');?>
+px;
+  padding-right: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['list']/8, ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-create .revws-grade-wrap {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['create']/8, ENT_QUOTES, 'UTF-8');?>
+px;
+  padding-right: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['create']/8, ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-product .revws-grade {
-  width: 16px;
-  height: 16px;
+  width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product'], ENT_QUOTES, 'UTF-8');?>
+px;
+  height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product'], ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-criterion .revws-grade {
-  width: 14px;
-  height: 14px;
+  width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product']*0.875, ENT_QUOTES, 'UTF-8');?>
+px;
+  height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['product']*0.875, ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-list .revws-grade {
-  width: 16px;
-  height: 16px;
+  width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['list'], ENT_QUOTES, 'UTF-8');?>
+px;
+  height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['list'], ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grading-create .revws-grade {
-  width: 80px;
-  height: 80px;
+  width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['create'], ENT_QUOTES, 'UTF-8');?>
+px;
+  height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['create'], ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-grade {
   transition: all 200ms linear;
-  stroke-width: 30;
+  stroke-width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['shape']['strokeWidth'], ENT_QUOTES, 'UTF-8');?>
+;
 }
 
 .revws-grade path {
@@ -71,18 +107,24 @@ a .revws-grading {
 }
 
 .revws-grade-off path {
-  fill: transparent;
-  stroke: #d5d5d5;
+  fill: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['colors']['fillColorOff'], ENT_QUOTES, 'UTF-8');?>
+;
+  stroke: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['colors']['borderColorOff'], ENT_QUOTES, 'UTF-8');?>
+;
 }
 
 .revws-grade-on path {
-  fill: #ffd055;
-  stroke: #ffd200;
+  fill: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['colors']['fillColor'], ENT_QUOTES, 'UTF-8');?>
+;
+  stroke: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['colors']['borderColor'], ENT_QUOTES, 'UTF-8');?>
+;
 }
 
 .revws-grade-highlight path {
-  fill: #bf9c3f;
-  stroke: #bf9d0;
+  fill: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['colors']['fillColorHigh'], ENT_QUOTES, 'UTF-8');?>
+;
+  stroke: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['colors']['borderColorHigh'], ENT_QUOTES, 'UTF-8');?>
+;
 }
 
 /* review layout */
@@ -132,7 +174,8 @@ a .revws-grading {
 }
 
 .revws-review-author {
-  min-width: 120px;
+  min-width: <?php echo htmlspecialchars(6*($_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['list']+$_smarty_tpl->tpl_vars['cssSettings']->value['shapeSize']['list']/4), ENT_QUOTES, 'UTF-8');?>
+px;
 }
 
 .revws-review-author-name {
@@ -321,8 +364,12 @@ a .revws-grading {
 }
 
 .revws-product-list-empty {
-    display: none;
-  }
+  <?php if ($_smarty_tpl->tpl_vars['cssSettings']->value['productList']['noReviews'] == 'omit') {?>
+  display: none;
+  <?php } elseif ($_smarty_tpl->tpl_vars['cssSettings']->value['productList']['noReviews'] == 'hide') {?>
+  opacity: 0;
+  <?php }?>
+}
 
 .revws-replies {
   width: 100%;
@@ -604,8 +651,10 @@ a .revws-grading {
 
 .revws-image {
   margin: 10px;
-  width: 120px;
-  height: 120px;
+  width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['images']['thumbnail']['width']+20, ENT_QUOTES, 'UTF-8');?>
+px;
+  height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['images']['thumbnail']['height']+20, ENT_QUOTES, 'UTF-8');?>
+px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -620,8 +669,10 @@ a .revws-grading {
 }
 
 .revws-image img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['images']['thumbnail']['width'], ENT_QUOTES, 'UTF-8');?>
+px;
+  max-height: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cssSettings']->value['images']['thumbnail']['height'], ENT_QUOTES, 'UTF-8');?>
+px;
   padding: 0px;
 }
 
@@ -629,5 +680,5 @@ a .revws-grading {
   stroke: #aaa;
   fill: #aaa;
 }
-
-/* end modules/revws/views/templates/front/css.tpl */
+<?php }
+}
